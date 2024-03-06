@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply bg-gray-900 h-screen
+  }
+
+  label {
+    @apply mb-2
+  }
+}
+
+.input-checkbox {
+  @apply flex flex-col items-center text-center
+}
+
+.checkbox {
+  @apply relative h-5 w-5 shrink-0 appearance-none rounded-sm border after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[length:15px] after:bg-center after:bg-no-repeat after:content-[''] checked:bg-lime-300 hover:ring hover:ring-lime-500 focus:outline-none after:bg-none after:checked:bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAnXAAAJ1wGxbhe3AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAANBJREFUOI1jYBgFJAFt8yBHTfOgAmQxJqI1mwZ6/P/PuI3xP5MSyQZomwZ6/GdkWs/w///ya6d08LggNJQZXbOOWYjPf0amDYwMDEuvndZLYWBo+IfTAK2H/3ZrmQXPZWBoYGJgYGDQtgjy+8fwf+1/RoZFV0/ppqFrZmBgYECxUUxa6wUDA0ObiMwrWVFpTRaG/4yrGBj+z79+al0GA8OB/9i8x4jp32Df/4wMaxgYGFgZGRhmXD21NpuBgQGrZpxAyyTEU9sspBybBaMAEwAAjbM4EbEkQggAAAAASUVORK5CYII')]
+}
